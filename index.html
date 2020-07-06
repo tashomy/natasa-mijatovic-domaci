@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domaci 5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background: #ffcce1;
+    }
+    
+    #heading {
+        font-family: 'Bangers', cursive;
+        text-align: center;
+        color: #49001e;
+        border: 2px dotted rgb(247, 247, 247);
+        border-radius: 70%;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+    }
+    
+    .container {
+        padding: 5px;
+        margin: 5px;
+    }
+</style>
+
+<body>
+    <form enctype="multipart/form-data" method="POST" action="form.php">
+        <h2 id="heading"> ↢ Zadatak 1 ↣</h2>
+        <div class="container">
+            <input type="text" name="name-surname" placeholder="Ime i prezime">
+        </div>
+        <div class="container">
+            <input type="text" name="email" placeholder="Email">
+        </div>
+        <div class="container">
+            <input type="text" name="phone-number" placeholder="Broj telefona">
+        </div>
+        <div class="container">
+            <input multiple type="file" name="file" />
+        </div>
+        <div class="container">
+            <button type='submit'>Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
