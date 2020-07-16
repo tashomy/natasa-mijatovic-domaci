@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index2</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      *{
+        scroll-behavior: smooth;
+      }
+      
+      .carousel-inner .carousel-item img {
+        width: 100%;
+      }
+
+      #modal-txt {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+     
+      <!--Navbar-->
+
+      <nav class="navbar navbar-expand-lg navbar-expand-md fixed-top navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#images">Images<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cards">Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#text">Text</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--Carousel-->
+
+      <div
+        id="images"
+        class="carousel slide"
+        data-ride="carousel"
+        style="margin-bottom: 20px;"
+      >
+        <ul class="carousel-indicators">
+          <li data-target="#images" data-slide-to="0" class="active"></li>
+          <li data-target="#images" data-slide-to="1"></li>
+          <li data-target="#images" data-slide-to="2"></li>
+          <li data-target="#images" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/first.jpg" alt="First" />
+            <div class="carousel-caption">
+              <h3>First</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/second.jpg" alt="Second" />
+            <div class="carousel-caption">
+              <h3>Second</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/third.jpg" alt="Third" />
+            <div class="carousel-caption">
+              <h3>Third</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/fourth.jpg" alt="Fourth" />
+            <div class="carousel-caption">
+              <h3>Fourth</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#images" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#images" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+      <!--Cards-->
+
+      <div id="cards" style="margin-bottom: 20px;">
+        <div class="row">
+          <div class="col-12">
+            <div class="card-deck">
+              <div class="card mt-5">
+                <div class="card-img-top">
+                  <img
+                    class="img img-responsive w-100 h-100"
+                    src="images/prva.jpg"
+                  />
+                </div>
+                <div class="card-header">
+                  <span class="card-title">
+                    Image 1
+                  </span>
+                </div>
+                <div class="card-body">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-primary">Button 1</button>
+                  <button class="btn btn-secondary">Button 2</button>
+                </div>
+              </div>
+              <div class="card mt-5">
+                <div class="card-img-top">
+                  <img
+                    class="img img-responsive w-100 h-100"
+                    src="images/druga.jpg"
+                  />
+                </div>
+                <div class="card-header">
+                  <span class="card-title">
+                    Image 2
+                  </span>
+                </div>
+                <div class="card-body">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-primary">Button 1</button>
+                  <button class="btn btn-secondary">Button 2</button>
+                </div>
+              </div>
+              <div class="card mt-5">
+                <div class="card-img-top">
+                  <img
+                    class="img img-responsive w-100 h-100"
+                    src="images/treca.jpg"
+                  />
+                </div>
+                <div class="card-header">
+                  <span class="card-title">
+                    Image 3
+                  </span>
+                </div>
+                <div class="card-body">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-primary">Button 1</button>
+                  <button class="btn btn-secondary">Button 2</button>
+                </div>
+              </div>
+              <div class="card mt-5">
+                <div class="card-img-top">
+                  <img
+                    class="img img-responsive w-100 h-100"
+                    src="images/cetvrta.jpg"
+                  />
+                </div>
+                <div class="card-header">
+                  <span class="card-title">
+                    Image 4
+                  </span>
+                </div>
+                <div class="card-body">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing.
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-primary">Button 1</button>
+                  <button class="btn btn-secondary">Button 2</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Text and modal-->
+
+    <div class="container" id="text" style="margin-top: 50px; margin-top: 20px;">
+      <div id="modal-txt">
+        <h1 class="text-center">Heading</h1>
+        <p class="text-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quo
+          reprehenderit officiis, facere exercitationem ullam nihil labore
+          beatae expedita quod aliquam. Assumenda facilis beatae, placeat ipsum
+          tempora, iste id reiciendis corporis omnis fuga velit minus nostrum
+          non molestias officiis veritatis dignissimos illo rerum inventore
+          quam. Inventore veniam maiores culpa alias mollitia, placeat voluptas
+          similique quo ipsa reprehenderit rerum ea fugit molestiae ex voluptate
+          eum unde eligendi sunt in sapiente velit. Quia unde blanditiis
+          adipisci voluptas iste sequi ad aliquam veritatis eligendi, aliquid
+          officiis magni temporibus ab ipsam fuga cumque ratione harum
+          perspiciatis, optio magnam veniam praesentium dolorum. Expedita
+          corporis animi veniam consectetur laboriosam impedit, asperiores
+          laudantium nobis, sit velit unde quibusdam assumenda molestias!
+          Voluptate quas quidem obcaecati sunt amet nobis eum vitae eaque
+          debitis ipsa, voluptatibus tenetur omnis eveniet sapiente perspiciatis
+          hic odio ipsum harum. Autem, deserunt ipsa nam illo cum est modi
+          cupiditate enim laudantium dolor omnis eaque esse nemo molestiae eum
+          molestias dolore quae nostrum. Veritatis deserunt, labore, modi
+          aperiam recusandae, cum quibusdam voluptatum iste ipsam sed autem!
+        </p>
+        <p class="text-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quo
+          reprehenderit officiis, facere exercitationem ullam nihil labore
+          beatae expedita quod aliquam. Assumenda facilis beatae, placeat ipsum
+          tempora, iste id reiciendis corporis omnis fuga velit minus nostrum
+          non molestias officiis veritatis dignissimos illo rerum inventore
+          quam. Inventore veniam maiores culpa alias mollitia, placeat voluptas
+          similique quo ipsa reprehenderit rerum ea fugit molestiae ex voluptate
+          eum unde eligendi sunt in sapiente velit. Quia unde blanditiis
+          adipisci voluptas iste sequi ad aliquam veritatis eligendi, aliquid
+          officiis magni temporibus ab ipsam fuga cumque ratione harum
+          perspiciatis, optio magnam veniam praesentium dolorum. Expedita
+          corporis animi veniam consectetur laboriosam impedit, asperiores
+          laudantium nobis, sit velit unde quibusdam assumenda molestias!
+          Voluptate quas quidem obcaecati sunt amet nobis eum vitae eaque
+          debitis ipsa, voluptatibus tenetur omnis eveniet sapiente perspiciatis
+          hic odio ipsum harum. Autem, deserunt ipsa nam illo cum est modi
+          cupiditate enim laudantium dolor omnis eaque esse nemo molestiae eum
+          molestias dolore quae nostrum. Veritatis deserunt, labore, modi
+          aperiam recusandae, cum quibusdam voluptatum iste ipsam sed autem!
+        </p>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-outline-primary""
+          data-toggle="modal"
+          data-target="#exampleModal"
+          style="margin-bottom: 20px;"
+        >
+          Modal
+        </button>
+
+        <!-- Modal -->
+        
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Title</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="name">Name and Surname</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Name and Surname"
+                    class="form-control"
+                  />
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                    class="form-control"
+                  />
+                  <label for="description">Description</label>
+                  <textarea
+                    name="description"
+                    id="description"
+                    cols="30"
+                    rows="10"
+                    placeholder="Description"
+                    class="form-control"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>
